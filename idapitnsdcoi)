@@ -1,0 +1,10 @@
+
+[1mFrom:[0m /root/Development/code/phase3/displaying-has-many-through-rails-lab/app/views/patients/show.html.erb:2 ActionView::CompiledTemplates#_app_views_patients_show_html_erb___444831529319413088_69845746341560:
+
+    [1;34m1[0m: <%= @patient.name %><br>
+ => [1;34m2[0m: <%binding.pry%>
+    [1;34m3[0m: <% @patient.appointments.each do |patient|%>
+    [1;34m4[0m: <%= @patient_doctor = @patient.doctors.find(appointments.doctor_id) %>
+    [1;34m5[0m: <%= link_to @patient_doctor.name, doctor_path(@patient_doctor)%> - <%= link_to appointment.appointment_datetime.strftime("%B %d, %Y at %k:%M"), appointment_path(appointment)%>
+    [1;34m6[0m: <%end %>
+
